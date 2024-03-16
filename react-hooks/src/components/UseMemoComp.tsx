@@ -9,7 +9,7 @@ function UseMemoComp() {
   // It make a performance issue
   // with useMemo, it will keep the value and will not rerendered the selectedItem
   // until the value in dependencies changed, the memo will triggered
-  // it will reduce the preformance
+  // it will reduce the preformance.
   const selectedItem = useMemo(
     () => items.find((item) => item.isSelected),
     [items]
