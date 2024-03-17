@@ -16,9 +16,16 @@ function UseMemoComp() {
   );
 
   return (
-    <div className="tutorial container mx-auto">
-      <h1>Count: {count}</h1>
-      <h1>Selected Item:{selectedItem?.id}</h1>
+    <div className="tutorial container mx-auto p-3 my-5 border-y-2">
+      <h2 className="font-semibold">useMemo</h2>
+      <p className="text-xs mb-2">
+        useMemo is a hook in React that is used for memoizing the result of a
+        function or computation. It allows you to optimize performance by
+        caching the result of expensive computations and only recalculating them
+        when necessary.
+      </p>
+      <h2>Count: {count}</h2>
+      <h2>Selected Item:{selectedItem?.id}</h2>
       <button
         className="bg-blue-500 p-2 rounded-md text-white font-semibold"
         onClick={() => setCount(count + 1)}

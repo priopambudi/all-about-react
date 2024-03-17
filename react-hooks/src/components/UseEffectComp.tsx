@@ -14,7 +14,7 @@ function UseEffectComp() {
   }, [count]); // The dependency array
 
   return (
-    <div className="tutorial container mx-auto">
+    <div className="tutorial container mx-auto px-3">
       <h1>Count: {count}</h1>
       <button
         className="bg-red-500 p-2 rounded-md text-white mr-2"

@@ -29,8 +29,14 @@ function UseCallbackComp() {
   );
 
   return (
-    <div className="container mx-auto mt-5 px-3">
-      <h2 className="font-bold mb-2">useCallbak</h2>
+    <div className="container mx-auto my-5 p-3 border-y-2">
+      <h2 className="font-bold">useCallbak</h2>
+      <p className="mb-3 text-xs">
+        useCallback is a hook in React that is used to memoize functions in
+        functional components. It is primarily used to optimize performance by
+        preventing unnecessary re-renders of child components that rely on
+        functions passed down as props.
+      </p>
       <div className="flex items-center">
         <button
           className="bg-blue-400 rounded-md p-2 font-semibold text-white hover:bg-blue-600"
